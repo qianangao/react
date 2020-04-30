@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+<script type="text/javascript" src="../js/prop-types.js"></script>
+<script type="text/babel">
+    class Life extends React.Component{
+        constructor(props){
+            super(props)
+            this.state={
+                opacity:1
+            }
+            this.handleClick=this.handleClick.bind(this)
+        }
+        componentDidMount(){
+            this.timer=setInterval(()=>{
+                console.log(this)
+                let {opacity}=this.state
+                opacity-=0.1
+                if(opacity<=0){
+                    opacity=1
+                }
+                this.setState({opacity})
+            },200)
+        }
+
+        componentWillUnmount(){
+            clearInterval(this.timer)
+        }
+        handleClick(){
+            ReactDOM.unmountComponentAtNode(document.getElementById('test'))
+        }
+        render(){
+            const {opacity}=this.state
+            const {msg}=this.props
+            return (
+                <div>
+                    <h2 style={{opacity:opacity}}>{msg}</h2>
+                    <button onClick={this.handleClick}>点击</button>
+                </div>
+            )
+        }
+    }
+    ReactDOM.render(<Life msg="React太难了!"/>,document.getElementById('test'))
+</script>
+</body>
+</html>

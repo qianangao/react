@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+<div id="test1"></div>
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+<script type="text/javascript" src="../js/prop-types.js"></script>
+<script type="text/babel">
+    // function Person(props){
+    //     return(
+    //         <ul>
+    //             <li>姓名:{props.name}</li>
+    //             <li>年龄:{props.age}</li>
+    //             <li>性别:{props.sex}</li>
+    //         </ul>
+    //     )
+    // }
+    class Person extends React.Component{
+        render(){
+            return(
+                    <ul>
+                        <li>姓名:{this.props.name}</li>
+                        <li>年龄:{this.props.age}</li>
+                        <li>性别:{this.props.sex}</li>
+                    </ul>
+                )
+        }
+    }
+
+    Person.defaultProps={
+        age:12,
+        sex:'男'
+    }
+    Person.propTypes={
+        name:PropTypes.string.isRequired,
+        age:PropTypes.number
+    }
+    const p1={
+        name:"Tom",
+        age:23,
+        sex:'男'
+    }
+    const p2={
+        name:"Tack"
+    }
+    ReactDOM.render(<Person {...p1}/>,document.getElementById('test'))
+    ReactDOM.render(<Person name={p2.name} age={26}/>,document.getElementById('test1'))
+</script>
+</body>
+</html>

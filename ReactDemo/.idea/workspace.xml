@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64bbc6d2-55e6-47b8-93cd-cbffd3ea68b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/api/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/assets/css/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/avatar_select/avatar_select.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/boss_info/boss_info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/dashen_info/dashen_info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-app/src/redux/action-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-app/src/redux/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-app/src/redux/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-app/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/src/components/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/src/containers/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/src/containers/app/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/src/components/comment_item/comment_item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/src/components/comment_item/comment_item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/src/components/comment_list/comment_list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/src/components/comment_list/comment_list.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/src/index.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Less File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/gzhipin-client" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1ah5u1gcO9AtOfwnpTU1TpM2nqE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gzhipin-server" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="/usr/local/lib/node_modules/npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gzhipin-client/src/containers" />
+      <recent name="$PROJECT_DIR$/gzhipin-client/src/components/login" />
+      <recent name="$PROJECT_DIR$/react-app/src/cintainers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gzhipin-client/src/containers" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/react-router-demo/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.test.html (2)">
+    <configuration name="componentDemo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/reactBase/componentDemo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="jsxExercise.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/reactBase/jsxExercise.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/components_props/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/component_lifeCycle/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/reactBase/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test.html (2)" />
+        <item itemvalue="JavaScript Debug.test.html (1)" />
+        <item itemvalue="JavaScript Debug.componentDemo.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.jsxExercise.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64bbc6d2-55e6-47b8-93cd-cbffd3ea68b5" name="Default Changelist" comment="" />
+      <created>1587175203386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587175203386</updated>
+      <workItem from="1587175205311" duration="39931000" />
+      <workItem from="1587430461961" duration="2000" />
+      <workItem from="1587436517072" duration="4665000" />
+      <workItem from="1587450848315" duration="162000" />
+      <workItem from="1587451223426" duration="2000" />
+      <workItem from="1587534359699" duration="4438000" />
+      <workItem from="1587546920300" duration="611000" />
+      <workItem from="1587600018043" duration="1031000" />
+      <workItem from="1587605064267" duration="500000" />
+      <workItem from="1587606403155" duration="2904000" />
+      <workItem from="1587624208886" duration="9955000" />
+      <workItem from="1587785082718" duration="11361000" />
+      <workItem from="1587805627446" duration="1226000" />
+      <workItem from="1587806937639" duration="3092000" />
+      <workItem from="1587952095674" duration="636000" />
+      <workItem from="1587954555314" duration="282000" />
+      <workItem from="1587955211895" duration="7637000" />
+      <workItem from="1588041767306" duration="7997000" />
+      <workItem from="1588055651140" duration="17082000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
