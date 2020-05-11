@@ -3,7 +3,7 @@ var router = express.Router();
 const md5=require('blueimp-md5')
 const filter={password:0,__v:0}
 
-const {UserModel}=require('../db/modules')
+const {UserModel,ChatModel}=require('../db/modules')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 
-//注册路由
+//1.注册路由
 router.post('/register',function (req,res) {
   const {username,password,type}=req.body
   UserModel.findOne({username},function (err,user) {
@@ -29,7 +29,7 @@ router.post('/register',function (req,res) {
 
 
 })
-//登录路由
+//2.登录路由
 router.post('/login',function (req,res) {
   const {username,password}=req.body
   UserModel.findOne({username,password:md5(password)},filter,function (err,user) {
@@ -43,7 +43,7 @@ router.post('/login',function (req,res) {
   })
 })
 
-//更新用户信息
+//3.更新用户信息
 router.post('/update',function (req,res) {
   const userid=req.cookies.userid
   if(!userid){
@@ -61,6 +61,68 @@ router.post('/update',function (req,res) {
       res.send({code:0,data})
     }
 
+  })
+
+})
+
+//4.获取用户信息
+router.get('/user',function (req,res) {
+  const userid=req.cookies.userid
+  if(!userid){
+    return res.send({code:1,msg:'请先登录'})
+  }
+  UserModel.findOne({_id:userid},filter,function (err,user) {
+    return res.send({code:0,data:user})
+
+  })
+
+})
+
+//5.获取用户列表(根据用户类型)
+router.get('/userList',function (req,res) {
+  const {type}=req.query
+  UserModel.find({type},filter,function (err,users) {
+    return res.send({code:0,data:users})
+  })
+
+})
+
+//6.获取当前用户的聊天消息列表
+router.get('/msglist',function (req,res) {
+  const userid =req.cookies.userid
+  UserModel.find(function(err,userDocs) {
+    // const users={}
+    // userDocs.forEach(doc=>{
+    //   users[doc._id]={username:doc.username,header:doc.header}
+    // })
+    const users=userDocs.reduce((users,user)=>{
+      users[user._id]={username:user.username,header:user.header}
+      return users
+    },{})
+    /*
+    查询userid相关的所有聊天信息
+      参数1:查询条件
+      参数2:过滤条件
+      参数3:回调函数
+
+     */
+    ChatModel.find({'$or':[{from:userid},{to:userid}]},filter,function (err,chatMsgs) {
+
+      res.send({code:0,data:{users,chatMsgs}})
+
+    })
+  })
+})
+
+//7.修改指定消息为已读
+router.post('/readmsg',function (req,res) {
+  //得到请求中的from和to
+  const from=req.body.from
+  const to=req.cookies.userid
+//更新数据库中的chat数量
+  ChatModel.update({from,to,read:false},{read:true},{multi:true},function (err,doc) {
+    console.log('/readmsg',doc)
+    res.send({code:0,data:doc.nModified}) //更新的数量
   })
 
 })

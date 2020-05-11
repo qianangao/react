@@ -8,3 +8,15 @@ export const ReqRegister=(user)=>ajax('/register',user,'post')
 export const ReqLogin=({username,password})=>ajax('/login',{username,password},'post')
 //更新用户信息
 export const ReqUpdateUser=(user)=>ajax('/update',user,'post')
+
+//获取用户信息
+export const ReqUser=()=>ajax('/user')
+
+//获取用户列表
+export const ReqUserList=(type)=>ajax('/userList',{type})
+
+//获取所有消息列表
+export const ReqMsgList=()=>ajax('/msgList')
+
+//判断消息是否已读
+export const ReqIsRead=(from)=>ajax('/readmsg',{from},'POST')

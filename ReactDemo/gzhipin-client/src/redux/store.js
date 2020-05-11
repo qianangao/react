@@ -6,7 +6,7 @@ import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import reducers from "./reducers";
 
-
+//createStore是用来初始化redux store的,是redux最重要的api
 const store=createStore(reducers,composeWithDevTools(applyMiddleware(thunk)))
 
 export default store

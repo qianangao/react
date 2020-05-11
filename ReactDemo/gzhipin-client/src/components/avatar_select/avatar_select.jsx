@@ -8,7 +8,7 @@ export default class Avatar_Select extends Component{
         this.data=[]
         for(let i=0;i<20;i++){
             this.data.push({
-                text:'头像'+(i+1),
+                text:i+1,
                 icon:require(`../../assets/img/${i+1}.jpg`)
             })
         }

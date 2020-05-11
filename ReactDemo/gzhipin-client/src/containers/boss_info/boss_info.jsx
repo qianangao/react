@@ -5,7 +5,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Redirect} from 'react-router-dom'
 import {Button, InputItem,TextareaItem, NavBar} from "antd-mobile";
-import Avatar_Select from "../avatar_select/avatar_select";
+import Avatar_Select from "../../components/avatar_select/avatar_select";
 import {update} from '../../redux/actions'
 
 class BossInfo extends Component{

@@ -5,9 +5,26 @@
       <change afterPath="$PROJECT_DIR$/gzhipin-client/src/api/ajax.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gzhipin-client/src/api/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gzhipin-client/src/assets/css/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/avatar_select/avatar_select.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/avatar_select/avatar_select.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/boss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/boss_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/dashen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/dashen_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/message_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/personal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/images/personal_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer/nav-footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/not-found/not-found.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/components/user-list/user-list.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/boss/boss.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/boss_info/boss_info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/chat/chat.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/dashen/dashen.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/dashen_info/dashen_info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/message/message.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/containers/personal/personal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gzhipin-client/src/test/socketio_test.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gzhipin-client/src/utils/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/react-app/src/redux/action-types.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/react-app/src/redux/actions.js" afterDir="false" />
@@ -32,10 +49,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Less File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,7 +71,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gzhipin-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -69,11 +86,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gzhipin-client/src/components" />
       <recent name="$PROJECT_DIR$/gzhipin-client/src/containers" />
       <recent name="$PROJECT_DIR$/gzhipin-client/src/components/login" />
       <recent name="$PROJECT_DIR$/react-app/src/cintainers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gzhipin-client/src/components/nav-footer" />
       <recent name="$PROJECT_DIR$/gzhipin-client/src/containers" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/react-router-demo/public" />
@@ -91,11 +110,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.test.html (2)">
+  <component name="RunManager">
     <configuration name="componentDemo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/reactBase/componentDemo.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="jsxExercise.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/reactBase/jsxExercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="test.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/components_props/test.html" useBuiltInWebServerPort="true">
@@ -107,13 +123,16 @@
     <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ReactDemo/reactBase/test.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="reduce.html" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/gzhipin-client/src/containers/main/reduce.html" working-dir="$PROJECT_DIR$/gzhipin-client/src/containers/main">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.reduce.html" />
         <item itemvalue="JavaScript Debug.test.html (2)" />
         <item itemvalue="JavaScript Debug.test.html (1)" />
         <item itemvalue="JavaScript Debug.componentDemo.html" />
         <item itemvalue="JavaScript Debug.test.html" />
-        <item itemvalue="JavaScript Debug.jsxExercise.html" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +164,7 @@
       <workItem from="1587954555314" duration="282000" />
       <workItem from="1587955211895" duration="7637000" />
       <workItem from="1588041767306" duration="7997000" />
-      <workItem from="1588055651140" duration="17082000" />
+      <workItem from="1588055651140" duration="84351000" />
     </task>
     <servers />
   </component>
